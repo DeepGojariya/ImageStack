@@ -1,0 +1,46 @@
+
+.navbar-back { 
+    background-color: black ;
+    color:  white ;
+    transition: all 0.5s ease-in-out;
+}
+
+.scrolled {
+    background-color: #000000d6;
+}
+
+.container {
+    column-count: 3;
+    transform: translate(0px , 65px);
+}
+
+@media (max-width : 768px)  {
+    .container{ 
+        column-count : 3;
+    }
+}
+
+@media (max-width :576px ) {
+    .container{
+        column-count : 2;
+    }
+}
+
+
+.container img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 2px 2px;
+    margin: 20px 0px;
+    box-shadow: -2px 0px 12px 0px rgb(0 0 0 / 30%);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.container img:hover{
+    transform: scale(1.05);   
+}
+
